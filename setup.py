@@ -6,9 +6,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.1"
 
-REPO_NAME = "Chicken-Disease-Classification"
+REPO_NAME = "Chicken-Disease"
 AUTHOR_USER_NAME = "Ahmed AlaaEldin"
-SRC_REPO = "Chicken-Disease-Classification"
+SRC_REPO = "Chicken-Disease"
 AUTHOR_EMAIL = 'ahmeddaladdin@gmail.com'
 
 
@@ -24,6 +24,5 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=setuptools.find_packages()
 )
